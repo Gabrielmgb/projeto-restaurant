@@ -47,8 +47,8 @@ const Expertise = () => {
               />
             </div>
             <div className="pl-8">
-              <h3 className="text-2xl uppercase tracking-tighter text-rose-300">
-                {cusine.title}
+              <h3 className="text-2xl uppercase tracking-tighter ">
+                <span className="text-rose-300">{cusine.title}</span>
               </h3>
               <p className="mt-4 text-lg tracking-tighter">
                 {cusine.description}

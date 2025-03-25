@@ -34,7 +34,7 @@ const Navbar = () => {
               href={`#${link.targetId}`}
               className={`text-sm ${
                 index !== 0 ? "border-l-2 border-neutral-300/20 pl-2" : ""
-              } hover:opacity-50`}
+              } hover:opacity-50 hover:duration-300`}
               onClick={(e) => handleScroll(e, link.targetId)}
             >
               {link.text}
