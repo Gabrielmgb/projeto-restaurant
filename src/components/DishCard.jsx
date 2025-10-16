@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 const DishCard = ({ project }) => {
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
     >
       <img
         src={project.image}
