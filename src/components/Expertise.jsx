@@ -25,7 +25,9 @@ const ItemVariants = {
 const Expertise = () => {
   return (
     <section id="expertise">
-      <h2 className="my-8 text-center text-3xl tracking-tighter">Our Expertise</h2>
+      <h2 className="my-8 text-center text-3xl tracking-tighter">
+        Our Expertise
+      </h2>
       <motion.div
         initial="hidden"
         whileInView="show"
