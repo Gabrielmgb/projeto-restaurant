@@ -1,5 +1,5 @@
-import { useState } from "react"
-import logo from "../assets/logo.png"
+import { useState } from "react";
+import logo from "../assets/logo.png";
 import { LINKS } from "../constants";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-  }
+  };
 
   const handleScroll = (event, targetId) => {
     event.preventDefault();
@@ -17,11 +17,11 @@ const Navbar = () => {
       const offsetTop = targetElement.offsetTop - 80;
       window.scrollTo({
         top: offsetTop,
-        behavior: "smooth"
-      })
+        behavior: "smooth",
+      });
     }
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <nav className="fixed top-4 z-50 flex w-full flex-col items-center justify-center">
@@ -43,7 +43,10 @@ const Navbar = () => {
         </div>
 
         <div className="lg:hidden">
-          <button className="mr-2 py-2 px-2 rounded-md hover:bg-neutral-400/10 duration-300 cursor-pointer" onClick={toggleMobileMenu}>
+          <button
+            className="mr-2 py-2 px-2 rounded-md hover:bg-neutral-400/10 duration-300 cursor-pointer"
+            onClick={toggleMobileMenu}
+          >
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
@@ -66,4 +69,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;
